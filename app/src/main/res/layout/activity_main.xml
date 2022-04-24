@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <CheckBox
+        android:id="@+id/checkBoxAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Android"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="137dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxIOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="IOS"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxAndroid"
+        tools:layout_editor_absoluteX="137dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="PHP"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxIOS"
+        tools:layout_editor_absoluteX="148dp" />
+
+    <Button
+        android:id="@+id/buttonXacnhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Xác nhận"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxPHP"
+        tools:layout_editor_absoluteX="148dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
